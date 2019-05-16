@@ -17,3 +17,9 @@ end
 # delete
 #
 File.delete(download_directory + "ASN.ffv_#{customer_number}.txt")
+
+# psrse each lines
+#
+File.readlines(local_file_path).each do |line|
+  puts line 
+end
